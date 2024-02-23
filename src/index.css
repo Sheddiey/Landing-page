@@ -15,10 +15,22 @@
     width: 500px;
     z-index: -1;
 }
+.bg-cover-about {
+    background-image: url("/src/assets//svgs/bg-tablet-pattern.svg");
+    background-size: cover;
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    left: -200px;
+}
+
  @media (max-width: 768px){
     .bg-cover {
         height: 400px;
         width: 350px;
         right: -20px;
+    }
+    .bg-cover-about {
+        display: none;
     }
  }
