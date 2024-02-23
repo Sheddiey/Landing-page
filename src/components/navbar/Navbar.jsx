@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import logo from "../../assets/svgs/logo.svg";
 import bars from "../../assets/svgs/icon-hamburger.svg";
 import close from "../../assets/svgs/icon-close.svg";
+import Button from "../button/Button";
 
 const Navbar = () => {
   const [isToggle, setIsToggle] = useState(false);
@@ -23,8 +24,10 @@ const Navbar = () => {
       ></div>
       <div
         className={`${
-          isToggle ? "absolute shadow-lg z-50 bg-white" : ""
-        }  top-[70px] py-[40px] w-[95%] ml-[10px] text-center text-[#273d99] `}
+          isToggle
+            ? "absolute top-[70px] py-[40px] w-[95%] ml-[10px] text-center text-[#273d99] shadow-lg z-50 bg-white "
+            : ""
+        } `}
       >
         <ul
           className={`${
@@ -38,10 +41,8 @@ const Navbar = () => {
           <li className="cursor-pointer hover:underline">Community</li>
         </ul>
       </div>
-      <div>
-        <button className="text-white rounded-[100vw] px-[15px] py-[5px] bg-[#dc3737] shadow-red-500 shadow-lg hidden md:block">
-          Get Started
-        </button>
+      <div className="md:block hidden">
+       <Button />
       </div>
       <div onClick={handleToggle} className="md:hidden">
         {isToggle ? <img src={close} alt="" /> : <img src={bars} alt="" />}
