@@ -16,13 +16,31 @@ const Reviews = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          swipe: true,
+        },
+      },
+    ],
   };
   return (
     <div className="w-[95%] md:w-[80%] mx-[auto] mb-[50px]">
-    <h2 className="text-[#2b3356] text-[34px] font-bold text-center my-[40px]">What they&apos;ve said</h2>
+      <h2 className="text-[#2b3356] text-[34px] font-bold text-center my-[40px]">
+        What they&apos;ve said
+      </h2>
       <Slider {...settings}>
         <div className="text-center relative bg-[#fafafa] p-[5px] rounded ">
-          <img className="h-[70px] absolute left-[50%] translate-x-[-50%] w-[70px]" src={anisha} alt="Anisha Li" />
+          <img
+            className="h-[70px] absolute left-[50%] translate-x-[-50%] w-[70px]"
+            src={anisha}
+            alt="Anisha Li"
+          />
           <h3 className="font-bold text-[#2b3356] mt-[80px]">Anisha Li</h3>
           <p className="text-[#888888] text-[14px]">
             “Manage has supercharged our team’s workflow. The ability to
@@ -31,7 +49,11 @@ const Reviews = () => {
           </p>
         </div>
         <div className="text-center relative bg-[#fafafa] p-[5px] rounded">
-          <img className="h-[70px] absolute left-[50%] translate-x-[-50%] w-[70px]" src={ali} alt="Anisha Li" />
+          <img
+            className="h-[70px] absolute left-[50%] translate-x-[-50%] w-[70px]"
+            src={ali}
+            alt="Anisha Li"
+          />
           <h3 className="font-bold text-[#2b3356] mt-[80px]">Ali Bravo</h3>
           <p className="text-[#888888] text-[14px]">
             “We have been able to cancel so many other subscriptions since using
@@ -40,7 +62,11 @@ const Reviews = () => {
           </p>
         </div>
         <div className="text-center relative bg-[#fafafa] p-[5px] rounded">
-          <img className="h-[70px] absolute left-[50%] translate-x-[-50%] w-[70px]" src={richard} alt="Anisha Li" />
+          <img
+            className="h-[70px] absolute left-[50%] translate-x-[-50%] w-[70px]"
+            src={richard}
+            alt="Anisha Li"
+          />
           <h3 className="font-bold text-[#2b3356] mt-[80px]">Richard Watts</h3>
           <p className="text-[#888888] text-[14px]">
             “Manage allows us to provide structure and process. It keeps us
@@ -49,7 +75,11 @@ const Reviews = () => {
           </p>
         </div>
         <div className="text-center relative bg-[#fafafa] p-[5px] rounded">
-          <img className="h-[70px] absolute left-[50%] translate-x-[-50%] w-[70px]" src={shanai} alt="Anisha Li" />
+          <img
+            className="h-[70px] absolute left-[50%] translate-x-[-50%] w-[70px]"
+            src={shanai}
+            alt="Anisha Li"
+          />
           <h3 className="font-bold text-[#2b3356] mt-[80px]"> Shanai Gough</h3>
           <p className="text-[#888888] text-[14px]">
             “Their software allows us to track, manage and collaborate on our
