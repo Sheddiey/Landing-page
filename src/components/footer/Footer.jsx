@@ -57,7 +57,7 @@ const Footer = () => {
                 Go
               </button>
             </div>
-            <p className="text-[12px] md:text-right md:right-[30px] left-[100px] absolute bottom-[-20px]">
+            <p className="text-[12px] md:text-right md:bottom-[20px] md:right-[0px] left-[100px] absolute bottom-[-20px]">
               Copyright 2024. All Rights Reserved
             </p>
           </div>
