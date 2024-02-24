@@ -35,7 +35,7 @@ const Reviews = () => {
       <h2 className="text-[#2b3356] text-[34px] font-bold text-center my-[40px]">
         What they&apos;ve said
       </h2>
-      <div>
+      <div className="overflow-x-hidden">
         <Slider {...settings}>
           <div className="text-center relative bg-[#fafafa] p-[5px] rounded ">
             <img
